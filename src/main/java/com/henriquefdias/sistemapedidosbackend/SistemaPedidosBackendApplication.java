@@ -8,6 +8,7 @@ public class SistemaPedidosBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SistemaPedidosBackendApplication.class, args);
+		System.out.println("Hello World!");
 	}
 
 }

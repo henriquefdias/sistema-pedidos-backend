@@ -12,8 +12,8 @@ public class CategoriaService {
 	@Autowired
 	private CategoriaRepository repo;
 	
-	public Categoria buscar() {
-		
+	public Categoria buscar(Integer id) {
+		Categoria obj = repo.findOne(id);
 	}
 	
 }

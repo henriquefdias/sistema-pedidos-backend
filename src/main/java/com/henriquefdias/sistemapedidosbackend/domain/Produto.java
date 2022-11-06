@@ -11,4 +11,7 @@ public class Produto {
 	
 	private List<Categoria> categorias = new ArrayList<>();
 
+	public Produto() {
+		
+	}
 }

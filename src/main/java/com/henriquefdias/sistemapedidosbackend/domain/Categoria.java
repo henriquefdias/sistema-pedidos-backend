@@ -63,4 +63,12 @@ public class Categoria implements Serializable {
 		return Objects.equals(id, other.id);
 	}
 
+	public List<Produto> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
+
 }

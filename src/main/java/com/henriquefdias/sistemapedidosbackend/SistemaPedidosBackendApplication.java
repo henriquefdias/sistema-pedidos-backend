@@ -32,6 +32,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		Produto p3 = new Produto(null, "Mouse", 80.00);
 		
 		cat1.getProdutos().addAll(Arrays.asList(p1, p2, p3));
+		cat2.getProdutos().addAll(Arrays.asList(p2));
 		
 		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
 	}

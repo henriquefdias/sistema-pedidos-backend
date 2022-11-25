@@ -10,12 +10,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.henriquefdias.sistemapedidosbackend.domain.Categoria;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.repositories.CategoriaRepository;
+import com.henriquefdias.sistemapedidosbackend.repositories.ProdutoRepository;
 
 @SpringBootApplication
 public class SistemaPedidosBackendApplication implements CommandLineRunner {
 	
 	@Autowired
 	private CategoriaRepository categoriaRepository;
+	@Autowired
+	private ProdutoRepository produtoRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SistemaPedidosBackendApplication.class, args);

@@ -1,5 +1,5 @@
 package com.henriquefdias.sistemapedidosbackend.services.exceptions;
 
-public class ObjectNotFoundException {
+public class ObjectNotFoundException extends RuntimeException {
 
 }

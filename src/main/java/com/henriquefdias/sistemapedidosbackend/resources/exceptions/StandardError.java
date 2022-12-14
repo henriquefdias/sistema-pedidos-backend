@@ -1,6 +1,8 @@
 package com.henriquefdias.sistemapedidosbackend.resources.exceptions;
 
-public class StandardError {
+import java.io.Serializable;
+
+public class StandardError implements Serializable{
 	
 	private Integer status;
 	private String msg;

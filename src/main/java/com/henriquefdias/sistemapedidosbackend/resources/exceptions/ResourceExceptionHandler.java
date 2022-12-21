@@ -12,7 +12,7 @@ import com.henriquefdias.sistemapedidosbackend.services.exceptions.ObjectNotFoun
 @ControllerAdvice
 public class ResourceExceptionHandler {
 
-	@ExceptionHandler
+	@ExceptionHandler(ObjectNotFoundException.class)
 	public ResponseEntity<StandardError> objectNotFound(ObjectNotFoundException e, HttpServletRequest request){
 		
 		StandardError err = new StandardError(HttpStatus.NOT_FOUND.value(), e.getMessage(), System.currentTimeMillis());

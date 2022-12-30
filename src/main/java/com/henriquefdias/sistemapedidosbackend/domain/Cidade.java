@@ -7,4 +7,8 @@ public class Cidade {
 	
 	private Estado estado;
 	
+	public Cidade() {
+		
+	}
+	
 }

@@ -10,5 +10,12 @@ public class Cidade {
 	public Cidade() {
 		
 	}
+
+	public Cidade(Integer id, String nome, Estado estado) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.estado = estado;
+	}
 	
 }

@@ -10,4 +10,7 @@ public class Estado {
 	
 	private List<Cidade> cidades = new ArrayList<>();
 
+	public Estado() {
+		
+	}
 }

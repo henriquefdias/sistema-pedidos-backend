@@ -13,4 +13,10 @@ public class Estado {
 	public Estado() {
 		
 	}
+
+	public Estado(Integer id, String nome) {
+		super();
+		this.id = id;
+		this.nome = nome;
+	}
 }

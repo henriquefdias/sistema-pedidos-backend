@@ -1,10 +1,12 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Estado {
+public class Estado implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private String nome;

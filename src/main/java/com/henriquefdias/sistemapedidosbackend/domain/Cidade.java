@@ -3,6 +3,7 @@ package com.henriquefdias.sistemapedidosbackend.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 public class Cidade implements Serializable {
@@ -12,6 +13,7 @@ public class Cidade implements Serializable {
 	private String nome;
 	
 	@ManyToOne
+	@JoinColumn(name="estado_id")
 	private Estado estado;
 	
 	public Cidade() {

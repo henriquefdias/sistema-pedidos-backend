@@ -5,12 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.OneToMany;
+
 public class Estado implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private String nome;
 	
+	@OneToMany
 	private List<Cidade> cidades = new ArrayList<>();
 
 	public Estado() {

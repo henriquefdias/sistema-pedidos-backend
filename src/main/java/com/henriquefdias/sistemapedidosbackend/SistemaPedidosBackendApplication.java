@@ -8,6 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.henriquefdias.sistemapedidosbackend.domain.Categoria;
+import com.henriquefdias.sistemapedidosbackend.domain.Estado;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.repositories.CategoriaRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.ProdutoRepository;
@@ -40,6 +41,9 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		p1.getCategorias().addAll(Arrays.asList(cat1));
 		p2.getCategorias().addAll(Arrays.asList(cat1, cat2));
 		p3.getCategorias().addAll(Arrays.asList(cat1));
+		
+		Estado est1 = new Estado(null, "Minas Gerais");
+		Estado est2 = new Estado(null, "São Paulo");
 		
 		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
 		produtoRepository.saveAll(Arrays.asList(p1, p2, p3));

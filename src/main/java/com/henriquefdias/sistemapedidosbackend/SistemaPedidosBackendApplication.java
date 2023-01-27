@@ -12,6 +12,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Cidade;
 import com.henriquefdias.sistemapedidosbackend.domain.Estado;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.repositories.CategoriaRepository;
+import com.henriquefdias.sistemapedidosbackend.repositories.EstadoRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.ProdutoRepository;
 
 @SpringBootApplication
@@ -21,6 +22,9 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 	private CategoriaRepository categoriaRepository;
 	@Autowired
 	private ProdutoRepository produtoRepository;
+	@Autowired
+	private EstadoRepository estadoRepository;
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(SistemaPedidosBackendApplication.class, args);

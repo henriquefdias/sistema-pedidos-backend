@@ -2,6 +2,6 @@ package com.henriquefdias.sistemapedidosbackend.domain.enums;
 
 public enum TipoCliente {
 
-	PESSOAFISICA,
-	PESSOAJURIDICA;
+	PESSOAFISICA(1, "Pessoa Física"),
+	PESSOAJURIDICA(2, "Pessoa Jurídica");
 }

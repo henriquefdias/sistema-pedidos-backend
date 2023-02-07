@@ -16,4 +16,8 @@ public enum TipoCliente {
 	public int getCod() {
 		return cod;
 	}
+	
+	public int getDescricao() {
+		return descricao;
+	}
 }

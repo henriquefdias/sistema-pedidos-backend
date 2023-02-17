@@ -1,5 +1,5 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
-public class Domain {
+public class Endereco {
 
 }

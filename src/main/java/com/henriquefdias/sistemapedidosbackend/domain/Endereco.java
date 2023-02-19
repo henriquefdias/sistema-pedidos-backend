@@ -9,5 +9,5 @@ public class Endereco {
 	private String bairro;
 	private String cep;
 	
-
+	private Cliente cliente;
 }

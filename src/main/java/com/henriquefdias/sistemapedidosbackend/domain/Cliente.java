@@ -9,5 +9,7 @@ public class Cliente {
 	private String email;
 	private String cpfOuCnpj;
 	private TipoCliente tipo;
+	
+	private List<Endereco> enderecos = new ArrayList<>();
 
 }

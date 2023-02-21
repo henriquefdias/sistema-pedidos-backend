@@ -1,5 +1,8 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
 
 public class Cliente {

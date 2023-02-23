@@ -17,6 +17,6 @@ public class Cliente {
 	
 	private List<Endereco> enderecos = new ArrayList<>();
 	
-	private Set<String> telefones = new HashSet<>()
+	private Set<String> telefones = new HashSet<>();
 
 }

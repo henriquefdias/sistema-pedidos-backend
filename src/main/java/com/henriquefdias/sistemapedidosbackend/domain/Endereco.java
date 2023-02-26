@@ -10,4 +10,8 @@ public class Endereco {
 	private String cep;
 	
 	private Cliente cliente;
+	
+	public Endereco() {
+		
+	}
 }

@@ -13,7 +13,7 @@ public class Cliente {
 	private String nome;
 	private String email;
 	private String cpfOuCnpj;
-	private TipoCliente tipo;
+	private Integer tipo;
 	
 	private List<Endereco> enderecos = new ArrayList<>();
 	

@@ -69,7 +69,7 @@ public class Cliente {
 	}
 
 	public void setTipo(TipoCliente tipo) {
-		this.tipo = tipo;
+		this.tipo = tipo.getCod();
 	}
 
 	public List<Endereco> getEnderecos() {

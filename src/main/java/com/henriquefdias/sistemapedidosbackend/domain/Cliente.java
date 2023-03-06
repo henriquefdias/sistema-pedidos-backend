@@ -65,7 +65,7 @@ public class Cliente {
 	}
 
 	public TipoCliente getTipo() {
-		return tipo;
+		return TipoCliente.toEnum(tipo);
 	}
 
 	public void setTipo(TipoCliente tipo) {

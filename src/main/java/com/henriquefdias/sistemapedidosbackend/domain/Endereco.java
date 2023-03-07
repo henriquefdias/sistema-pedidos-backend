@@ -11,6 +11,8 @@ public class Endereco {
 	
 	private Cliente cliente;
 	
+	private Cidade cidade;
+	
 	public Endereco() {
 		
 	}

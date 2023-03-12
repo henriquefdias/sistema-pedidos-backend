@@ -1,5 +1,7 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.util.Objects;
+
 public class Endereco {
 	
 	private Integer id;
@@ -92,5 +94,22 @@ public class Endereco {
 
 	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Endereco other = (Endereco) obj;
+		return Objects.equals(id, other.id);
 	}
 }

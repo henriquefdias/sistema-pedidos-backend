@@ -1,8 +1,10 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Endereco {
+public class Endereco implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private String logradouro;

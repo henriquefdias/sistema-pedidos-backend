@@ -1,5 +1,6 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -8,7 +9,8 @@ import java.util.Set;
 
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
 
-public class Cliente {
+public class Cliente implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private String nome;

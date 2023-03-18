@@ -7,12 +7,14 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
 
+@Entity
 public class Cliente implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Endereco implements Serializable {
@@ -21,6 +22,7 @@ public class Endereco implements Serializable {
 	private String bairro;
 	private String cep;
 	
+	@ManyToOne
 	private Cliente cliente;
 	
 	private Cidade cidade;

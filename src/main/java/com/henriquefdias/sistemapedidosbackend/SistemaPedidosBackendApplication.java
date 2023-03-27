@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.henriquefdias.sistemapedidosbackend.domain.Categoria;
 import com.henriquefdias.sistemapedidosbackend.domain.Cidade;
 import com.henriquefdias.sistemapedidosbackend.domain.Cliente;
+import com.henriquefdias.sistemapedidosbackend.domain.Endereco;
 import com.henriquefdias.sistemapedidosbackend.domain.Estado;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
@@ -71,6 +72,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "36378912377", TipoCliente.PESSOAFISICA);
 		
 		cli1.getTelefones().addAll(Arrays.asList("27363323", "93838393"));
+		
+		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 303", "Jardim", "38220834", cli1, c3)
 	}
 
 }

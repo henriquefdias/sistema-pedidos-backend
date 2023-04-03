@@ -16,6 +16,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
 import com.henriquefdias.sistemapedidosbackend.repositories.CategoriaRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.CidadeRepository;
+import com.henriquefdias.sistemapedidosbackend.repositories.ClienteRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.EstadoRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.ProdutoRepository;
 
@@ -30,6 +31,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 	private EstadoRepository estadoRepository;
 	@Autowired
 	private CidadeRepository cidadeRepository;
+	@Autowired
+	private ClienteRepository clienteRepository;
 	
 
 	public static void main(String[] args) {

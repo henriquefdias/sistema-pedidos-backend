@@ -14,7 +14,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Cliente;
 import com.henriquefdias.sistemapedidosbackend.services.ClienteService;
 
 @RestController
-@RequestMapping(value="/categorias")
+@RequestMapping(value="/clientes")
 public class ClienteResource {
 
 	@Autowired

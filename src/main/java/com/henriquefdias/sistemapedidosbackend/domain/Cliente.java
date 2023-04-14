@@ -31,7 +31,7 @@ public class Cliente implements Serializable {
 	private Integer tipo;
 	
 	@JsonManagedReference
-	@OneToMany(mappedBy = "clientes")
+	@OneToMany(mappedBy = "cliente")
 	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection

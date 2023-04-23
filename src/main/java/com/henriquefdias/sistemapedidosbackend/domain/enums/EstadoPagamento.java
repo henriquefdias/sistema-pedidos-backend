@@ -2,8 +2,8 @@ package com.henriquefdias.sistemapedidosbackend.domain.enums;
 
 public enum EstadoPagamento {
 
-	PENDENTE,
-	QUITADO,
-	CANCELADO;
+	PENDENTE(1, "Pendente"),
+	QUITADO(2, "Quitado"),
+	CANCELADO(3, "Cancelado");
 	
 }

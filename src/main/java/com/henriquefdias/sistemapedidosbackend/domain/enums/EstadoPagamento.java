@@ -28,7 +28,7 @@ public enum EstadoPagamento {
 			return null;
 		}
 		
-		for(TipoCliente x : TipoCliente.values()) {
+		for(EstadoPagamento x : EstadoPagamento.values()) {
 			if(cod.equals(x.getCod())) {
 				return x;
 			}
@@ -36,7 +36,4 @@ public enum EstadoPagamento {
 		
 		throw new IllegalArgumentException("Id inválido: " + cod);
 	}
-}
-
-	
 }

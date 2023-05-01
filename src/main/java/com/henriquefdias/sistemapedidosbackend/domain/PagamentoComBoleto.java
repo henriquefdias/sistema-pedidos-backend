@@ -1,5 +1,10 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
-public class PagamentoComBoleto extends Pagamento{
+import java.util.Date;
+
+public class PagamentoComBoleto extends Pagamento {
+	
+	private Date dataVencimento;
+	private Date dataPagamento;
 
 }

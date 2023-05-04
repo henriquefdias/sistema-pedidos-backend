@@ -6,4 +6,6 @@ public class Pedido {
 
 	private Integer id;
 	private Date instante;
+	
+	private Pagamento pagamento;
 }

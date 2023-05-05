@@ -7,4 +7,5 @@ public class Pagamento {
 	private Integer id;
 	private EstadoPagamento estado;
 
+	private Pedido pedido;
 }

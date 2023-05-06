@@ -8,4 +8,6 @@ public class Pedido {
 	private Date instante;
 	
 	private Pagamento pagamento;
+	
+	private Cliente cliente;
 }

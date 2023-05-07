@@ -10,4 +10,6 @@ public class Pedido {
 	private Pagamento pagamento;
 	
 	private Cliente cliente;
+	
+	private Endereco enderecoDeEntrega;
 }

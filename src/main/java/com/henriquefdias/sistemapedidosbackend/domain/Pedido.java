@@ -12,4 +12,8 @@ public class Pedido {
 	private Cliente cliente;
 	
 	private Endereco enderecoDeEntrega;
+	
+	public Pedido() {
+		
+	}
 }

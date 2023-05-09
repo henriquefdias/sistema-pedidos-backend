@@ -14,6 +14,5 @@ public class Pedido {
 	private Endereco enderecoDeEntrega;
 	
 	public Pedido() {
-		
 	}
 }

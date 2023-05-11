@@ -8,4 +8,8 @@ public class Pagamento {
 	private EstadoPagamento estado;
 
 	private Pedido pedido;
+	
+	public Pagamento() {
+		
+	}
 }

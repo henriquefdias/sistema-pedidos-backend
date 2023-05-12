@@ -10,6 +10,5 @@ public class Pagamento {
 	private Pedido pedido;
 	
 	public Pagamento() {
-		
 	}
 }

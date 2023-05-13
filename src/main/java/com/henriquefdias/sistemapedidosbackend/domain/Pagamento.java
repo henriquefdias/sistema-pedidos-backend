@@ -11,4 +11,12 @@ public class Pagamento {
 	
 	public Pagamento() {
 	}
+
+	public Pagamento(Integer id, EstadoPagamento estado, Pedido pedido) {
+		super();
+		this.id = id;
+		this.estado = estado;
+		this.pedido = pedido;
+	}
+	
 }

@@ -126,4 +126,12 @@ public class Cliente implements Serializable {
 		return Objects.equals(id, other.id);
 	}
 
+	public List<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void setPedidos(List<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}
+
 }

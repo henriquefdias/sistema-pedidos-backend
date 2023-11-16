@@ -1,10 +1,12 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 
-public class Pagamento {
+public class Pagamento implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private EstadoPagamento estado;

@@ -3,6 +3,7 @@ package com.henriquefdias.sistemapedidosbackend.domain;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 
 public class PagamentoComCartao extends Pagamento {
+	private static final long serialVersionUID = 1L;
 	
 	private Integer numeroDeParcelas;
 	

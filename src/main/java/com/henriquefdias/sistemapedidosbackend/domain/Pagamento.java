@@ -5,6 +5,7 @@ import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 
@@ -16,6 +17,7 @@ public class Pagamento implements Serializable {
 	private Integer id;
 	private EstadoPagamento estado;
 
+	@OneToOne
 	private Pedido pedido;
 	
 	public Pagamento() {

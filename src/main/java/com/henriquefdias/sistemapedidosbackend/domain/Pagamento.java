@@ -5,6 +5,7 @@ import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
@@ -18,6 +19,7 @@ public class Pagamento implements Serializable {
 	private EstadoPagamento estado;
 
 	@OneToOne
+	@JoinColumn(name="pedido_id")
 	private Pedido pedido;
 	
 	public Pagamento() {

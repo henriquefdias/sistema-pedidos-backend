@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Pedido implements Serializable {
 	private static final long serialVersionUID = 1L;
 

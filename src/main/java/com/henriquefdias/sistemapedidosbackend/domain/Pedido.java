@@ -20,7 +20,7 @@ public class Pedido implements Serializable {
 	private Integer id;
 	private Date instante;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "pedido")
 	private Pagamento pagamento;
 	
 	private Cliente cliente;

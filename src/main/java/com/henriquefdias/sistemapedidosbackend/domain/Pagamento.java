@@ -6,6 +6,7 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
@@ -13,7 +14,7 @@ import javax.persistence.OneToOne;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 
 @Entity
-@Inheritance
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Pagamento implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

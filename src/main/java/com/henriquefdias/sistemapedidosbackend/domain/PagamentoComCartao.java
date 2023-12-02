@@ -1,7 +1,10 @@
 package com.henriquefdias.sistemapedidosbackend.domain;
 
+import javax.persistence.Entity;
+
 import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 
+@Entity
 public class PagamentoComCartao extends Pagamento {
 	private static final long serialVersionUID = 1L;
 	

@@ -26,6 +26,7 @@ public class Pedido implements Serializable {
 	private Pagamento pagamento;
 	
 	@ManyToOne
+	@JoinColumn(name = "cliente_id")
 	private Cliente cliente;
 	
 	@ManyToOne

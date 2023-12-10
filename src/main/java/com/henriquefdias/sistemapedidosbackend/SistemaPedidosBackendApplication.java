@@ -1,5 +1,6 @@
 package com.henriquefdias.sistemapedidosbackend;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,6 +88,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		
 		clienteRepository.saveAll(Arrays.asList(cli1));
 		enderecoRepository.saveAll(Arrays.asList(e1, e2));
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		
 		Pedido ped1 = new Pedido(null, instante, pagamento, cliente, enderecoDeEntrega)
 	}

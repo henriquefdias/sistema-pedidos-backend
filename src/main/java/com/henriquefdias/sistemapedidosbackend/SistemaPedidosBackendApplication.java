@@ -91,7 +91,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		
-		Pedido ped1 = new Pedido(null, sdf.parse("30/07/2017 10:32"), cli1, enderecoDeEntrega)
+		Pedido ped1 = new Pedido(null, sdf.parse("30/07/2017 10:32"), cli1, e1);
 	}
 
 }

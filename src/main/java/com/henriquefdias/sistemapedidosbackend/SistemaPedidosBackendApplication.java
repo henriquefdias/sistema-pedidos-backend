@@ -13,6 +13,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Cidade;
 import com.henriquefdias.sistemapedidosbackend.domain.Cliente;
 import com.henriquefdias.sistemapedidosbackend.domain.Endereco;
 import com.henriquefdias.sistemapedidosbackend.domain.Estado;
+import com.henriquefdias.sistemapedidosbackend.domain.PagamentoComCartao;
 import com.henriquefdias.sistemapedidosbackend.domain.Pedido;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
@@ -94,7 +95,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		Pedido ped1 = new Pedido(null, sdf.parse("30/07/2017 10:32"), cli1, e1);
 		Pedido ped2 = new Pedido(null, sdf.parse("10/10/2017 19:35"), cli1, e2);
 		
-		Pagamento pagto1 = new Pagamento();
+		Pagamento pagto1 = new PagamentoComCartao();
 	}
 
 }

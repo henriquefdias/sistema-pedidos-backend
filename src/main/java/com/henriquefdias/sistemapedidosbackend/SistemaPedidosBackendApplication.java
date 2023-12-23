@@ -13,6 +13,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Cidade;
 import com.henriquefdias.sistemapedidosbackend.domain.Cliente;
 import com.henriquefdias.sistemapedidosbackend.domain.Endereco;
 import com.henriquefdias.sistemapedidosbackend.domain.Estado;
+import com.henriquefdias.sistemapedidosbackend.domain.Pagamento;
 import com.henriquefdias.sistemapedidosbackend.domain.PagamentoComCartao;
 import com.henriquefdias.sistemapedidosbackend.domain.Pedido;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;

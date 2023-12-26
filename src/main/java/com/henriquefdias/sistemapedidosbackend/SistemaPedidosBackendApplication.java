@@ -17,6 +17,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Pagamento;
 import com.henriquefdias.sistemapedidosbackend.domain.PagamentoComCartao;
 import com.henriquefdias.sistemapedidosbackend.domain.Pedido;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
+import com.henriquefdias.sistemapedidosbackend.domain.enums.EstadoPagamento;
 import com.henriquefdias.sistemapedidosbackend.domain.enums.TipoCliente;
 import com.henriquefdias.sistemapedidosbackend.repositories.CategoriaRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.CidadeRepository;
@@ -96,7 +97,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		Pedido ped1 = new Pedido(null, sdf.parse("30/07/2017 10:32"), cli1, e1);
 		Pedido ped2 = new Pedido(null, sdf.parse("10/10/2017 19:35"), cli1, e2);
 		
-		Pagamento pagto1 = new PagamentoComCartao(null);
+		Pagamento pagto1 = new PagamentoComCartao(null, EstadoPagamento.QUITADO);
 	}
 
 }

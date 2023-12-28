@@ -98,6 +98,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		Pedido ped2 = new Pedido(null, sdf.parse("10/10/2017 19:35"), cli1, e2);
 		
 		Pagamento pagto1 = new PagamentoComCartao(null, EstadoPagamento.QUITADO, ped1, 6);
+		ped1.setPagamento(pagto1);
 	}
 
 }

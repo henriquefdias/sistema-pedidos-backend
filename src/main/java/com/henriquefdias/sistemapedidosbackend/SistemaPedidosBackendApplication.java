@@ -14,6 +14,7 @@ import com.henriquefdias.sistemapedidosbackend.domain.Cliente;
 import com.henriquefdias.sistemapedidosbackend.domain.Endereco;
 import com.henriquefdias.sistemapedidosbackend.domain.Estado;
 import com.henriquefdias.sistemapedidosbackend.domain.Pagamento;
+import com.henriquefdias.sistemapedidosbackend.domain.PagamentoComBoleto;
 import com.henriquefdias.sistemapedidosbackend.domain.PagamentoComCartao;
 import com.henriquefdias.sistemapedidosbackend.domain.Pedido;
 import com.henriquefdias.sistemapedidosbackend.domain.Produto;
@@ -99,6 +100,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		
 		Pagamento pagto1 = new PagamentoComCartao(null, EstadoPagamento.QUITADO, ped1, 6);
 		ped1.setPagamento(pagto1);
+		
+		Pagamento pagto2 = new PagamentoComBoleto(null, null, ped2)
 	}
 
 }

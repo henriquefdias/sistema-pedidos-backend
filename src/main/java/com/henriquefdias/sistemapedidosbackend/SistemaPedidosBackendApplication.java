@@ -102,6 +102,7 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		ped1.setPagamento(pagto1);
 		
 		Pagamento pagto2 = new PagamentoComBoleto(null, EstadoPagamento.PENDENTE, ped2, sdf.parse("20/10/2017 00:00"), null);
+		ped2.setPagamento(pagto2);
 	}
 
 }

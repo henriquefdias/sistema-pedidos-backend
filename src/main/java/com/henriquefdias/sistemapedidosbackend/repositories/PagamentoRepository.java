@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.henriquefdias.sistemapedidosbackend.domain.Categoria;
 
 @Repository
-public interface PagamentoRepository extends JpaRepository<Categoria, Integer>{
+public interface PagamentoRepository extends JpaRepository<Pagamento, Integer>{
 	
 	
 

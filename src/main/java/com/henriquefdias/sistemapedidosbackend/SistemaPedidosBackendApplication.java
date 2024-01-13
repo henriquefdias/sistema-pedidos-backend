@@ -25,6 +25,7 @@ import com.henriquefdias.sistemapedidosbackend.repositories.CidadeRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.ClienteRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.EnderecoRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.EstadoRepository;
+import com.henriquefdias.sistemapedidosbackend.repositories.PedidoRepository;
 import com.henriquefdias.sistemapedidosbackend.repositories.ProdutoRepository;
 
 @SpringBootApplication
@@ -42,6 +43,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 	private ClienteRepository clienteRepository;
 	@Autowired
 	private EnderecoRepository enderecoRepository;
+	@Autowired
+	private PedidoRepository pedidoRepository;
 	
 
 	public static void main(String[] args) {

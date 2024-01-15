@@ -111,6 +111,8 @@ public class SistemaPedidosBackendApplication implements CommandLineRunner {
 		ped2.setPagamento(pagto2);
 		
 		cli1.getPedidos().addAll(Arrays.asList(ped1, ped2));
+		
+		pedidoRepository.saveAll(Arrays.asList(ped1, ped2));
 	}
 
 }

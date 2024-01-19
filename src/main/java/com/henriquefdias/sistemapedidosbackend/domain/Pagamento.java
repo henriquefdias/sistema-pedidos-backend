@@ -50,7 +50,7 @@ public abstract class Pagamento implements Serializable {
 	}
 
 	public void setEstado(EstadoPagamento estado) {
-		this.estado = estado;
+		this.estado = estado.getCod();
 	}
 
 	public Pedido getPedido() {

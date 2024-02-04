@@ -3,6 +3,9 @@ package com.henriquefdias.sistemapedidosbackend.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class ItemPedidoPK implements Serializable{
 	private static final long serialVersionUID = 1L;
 	

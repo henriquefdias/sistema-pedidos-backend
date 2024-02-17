@@ -12,4 +12,12 @@ public class ItemPedido {
 		
 	}
 
+	public ItemPedido(ItemPedidoPK id, Double desconto, Integer quantidade, Double preco) {
+		super();
+		this.id = id;
+		this.desconto = desconto;
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
+
 }

@@ -12,7 +12,7 @@ public class ItemPedido {
 		
 	}
 
-	public ItemPedido(ItemPedidoPK id, Double desconto, Integer quantidade, Double preco) {
+	public ItemPedido(Pedido pedido, Produto produto, Double desconto, Integer quantidade, Double preco) {
 		super();
 		this.id = id;
 		this.desconto = desconto;

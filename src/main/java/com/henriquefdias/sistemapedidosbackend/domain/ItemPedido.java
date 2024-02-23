@@ -20,6 +20,10 @@ public class ItemPedido {
 		this.quantidade = quantidade;
 		this.preco = preco;
 	}
+	
+	public Pedido getPedido() {
+		return id.getPedido();
+	}
 
 	public ItemPedidoPK getId() {
 		return id;
